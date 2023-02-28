@@ -1,0 +1,271 @@
+.pointer {
+    cursor: pointer;
+}
+
+body {
+    background: rgb(23,20,20);
+    background: linear-gradient(165deg, rgba(23,20,20,1) 0%, rgba(241,241,241,1) 100%);
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .frame {
+        border-radius: 10px;
+        background-color: #981C43;
+        height: 20rem;
+        width: 35rem;
+        box-shadow: 10px 7px 20px 0px #292121;
+        border: 1px solid #4d4c4c;
+    
+    }
+
+    .front-face {
+        background: linear-gradient(to right, #111, #555);
+
+        .chip {
+            position: absolute;
+            top: 130px;
+            left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 40px;
+            border-radius: 5px;
+            background-image: linear-gradient(to left, #f5f5f5, #6e6c6c);
+            overflow: hidden;
+
+            & .chip-line {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #333;
+            }
+
+            & .chip-line:nth-child(1) {
+                top: 13px;
+            }
+
+            & .chip-line:nth-child(2) {
+                top: 20px;
+            }
+
+            & .chip-line:nth-child(3) {
+                top: 28px;
+            }
+
+            & .chip-line:nth-child(4) {
+                left: 25px;
+                width: 1px;
+                height: 50px;
+            }
+
+            & .chip-main {
+                width: 20px;
+                height: 25px;
+                border: 1px solid #333;
+                border-radius: 3px;
+                background-image: linear-gradient(to bottom left, #fff0f0, #7e7e7e);
+                z-index: 1;
+            }
+        }
+
+        .card-title {
+            color: #ffffff;
+            float: left;
+            padding: 20px 20px;
+            font-size: 23px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            user-select:none;
+        }
+
+        .card-title-subtext {
+            color: #ffffff;
+            float: left;
+            display: block;
+            position: absolute;
+            user-select:none;
+            left: 23px !important;
+            font-size: 15px;
+            top: 50px;
+            font-weight: 300;
+        }
+
+
+        .logo {
+            color: #ffffff;
+            background-image: url('../../../public/logo.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 50px;
+            width: 110px;
+            margin: 23px;
+        }
+
+        .card-name {
+            color: #ffffff;
+            font-size: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-weight: 300;
+
+        }
+
+        .visa-logo {
+            color: #ffffff;
+            background-image: url('../../../public/visa-logo-black-and-white.png');
+            background-repeat: no-repeat;
+            background-size: 90%;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            height: 40px;
+            width: 100px;
+        }
+
+        .contactless-icon {
+            color: #ffffff;
+            background-image: url('../../../public/contactless.png');
+            background-repeat: no-repeat;
+            background-size: 90%;
+            position: absolute;
+            top: 130px;
+            right: 15px;
+            height: 55px;
+            width: 55px;
+        }
+    }
+
+    .content{
+        
+        transform: rotateY(180deg); 
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -o-transition-duration: 1s;
+         transition-duration: 1s;
+    }
+
+    .back-front {
+        transform: rotateY(180deg); 
+        display: block;
+        background-image: linear-gradient(to right, #555, #111);
+
+        .strip {
+            position: absolute;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(108deg, rgba(2, 0, 36, 1) 0%, rgba(61, 61, 61, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            height: 60px;
+            width: 100%;
+            top: 20px;
+        }
+
+        .cvv-block {
+            position: absolute;
+            display: flex;
+            height: 60px;
+            width: 70%;
+            top: 90px;
+            left: 20px;
+            border: 1px solid #ffffff;
+
+            .cvv-text {
+                color: #ffffff;
+                text-align: end;
+                position: absolute;
+                right: 10px;
+                padding-top: 18px;
+            }
+
+
+            .cvv-gradient {
+                position: absolute;
+                background: rgb(186, 184, 214);
+                background: linear-gradient(108deg, rgba(186, 184, 214, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+                height: 100%;
+                width: 80%;
+            }
+        }
+
+
+        .card-number {
+            position: absolute;      
+            margin: 20px;
+            bottom: 28%;
+            letter-spacing: 2px;
+            color: #ffffff;
+            top: 180px;
+            font-size: 25px;
+        }
+
+        .validity {
+            display: block;
+            position: absolute;
+            display: flex;
+            margin-left: 23px;
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 16px;
+            bottom: 16%;
+            top: 270px;
+
+            .validity-date {
+                letter-spacing: 2px;
+            }
+        }
+
+        .logo-sm {
+            position: absolute;
+            display: flex;
+            background-image: url('../../../public/logo1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            height: 50px;
+            width: 50px;
+            float: right;
+            top: 240px;
+            right: 20px;
+        }
+    }
+
+}
+
+.float-right {
+    float: right;
+}
+
+
+.flip {
+    width: inherit;
+    height: inherit;
+    transition: 0.7s;   
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+     transition-duration: 1s;
+}
+
+
+@-webkit-keyframes flip {
+  0%, 100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes flip {
+  0%, 100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
