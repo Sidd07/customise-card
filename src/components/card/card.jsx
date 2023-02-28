@@ -22,11 +22,13 @@ const Card = (props) => {
                     :
 
                     <div className="front-face flip frame pointer" onClick={e => { setToggle(!toggle) }}>
-                        <div>
-                            <label className="card-title"> CLASSIC</label>
-                            <label className="card-title-subtext"> Cash back</label>
+                        <div className="header">
+                            <div>
+                                <label className="card-title"> CLASSIC</label>
+                                <label className="card-title-subtext"> Cash back</label>
+                            </div>
+                            <label className="logo float-right"> </label>
                         </div>
-                        <label className="logo float-right"> </label>
                         <div className="chip">
                             <div className="chip-line"></div>
                             <div className="chip-line"></div>

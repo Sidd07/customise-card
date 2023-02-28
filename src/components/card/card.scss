@@ -75,37 +75,45 @@ body {
             }
         }
 
-        .card-title {
-            color: #ffffff;
-            float: left;
-            padding: 20px 20px;
-            font-size: 23px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            user-select:none;
-        }
-
-        .card-title-subtext {
-            color: #ffffff;
-            float: left;
-            display: block;
-            position: absolute;
-            user-select:none;
-            left: 23px !important;
-            font-size: 15px;
-            top: 50px;
-            font-weight: 300;
-        }
-
-
-        .logo {
-            color: #ffffff;
-            background-image: url('../../../public/logo.png');
-            background-repeat: no-repeat;
-            background-size: 100%;
-            height: 50px;
-            width: 110px;
-            margin: 23px;
+        .header{ 
+            width: 100%;
+            height: 80px;
+            border-radius: 10px 10px 0 0;
+            background: linear-gradient(106deg, rgba(23,19,19,1) 48%, rgba(85,83,83,1) 100%);
+        
+            .card-title {
+                color: #ffffff;
+                float: left;
+                padding: 20px 20px;
+                font-size: 23px;
+                font-weight: 400;
+                letter-spacing: 2px;
+                user-select:none;
+            }
+    
+            .card-title-subtext {
+                color: #ffffff;
+                float: left;
+                display: block;
+                position: absolute;
+                user-select:none;
+                left: 23px !important;
+                font-size: 15px;
+                top: 50px;
+                font-weight: 300;
+            }
+    
+    
+            .logo {
+                color: #ffffff;
+                background-image: url('../../../public/logo.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 50px;
+                width: 110px;
+                margin: 23px;
+            
+            }
         }
 
         .card-name {
@@ -223,12 +231,12 @@ body {
         .logo-sm {
             position: absolute;
             display: flex;
-            background-image: url('../../../public/logo1.png');
+            background-image: url('../../../public/logo.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-            height: 50px;
-            width: 50px;
+            height: 65px;
+            width: 150px;
             float: right;
             top: 240px;
             right: 20px;
